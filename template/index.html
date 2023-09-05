@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote-generator</title>
+    <link rel="stylesheet" href="/template/style.css">
+    <!-- to be able to use icons from fontawsome  website on our website -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+     <!-- to add icon before website name -->
+    
+     <link rel="shortcut icon" href="/template/favicon .ico" type="image/x-icon">
+     <link rel="icon" href="/template/favicon .ico" type="image/x-icon">
+    <!-- googlefonts.com  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="quote-container" id="quote-container">
+<!-- quote -->
+    <div class="quote-text">
+        <i class="fas fa-quote-left"></i>
+        <!-- <span id="quote">What you are is what you have been. What you'll be is what you do now.</span> -->
+       <!-- quote is also dynamic  -->
+        <span id="quote"></span>
+    </div>
+    <!-- author -->
+        <div class="quote-author">
+            <!-- <span id="author">Buddha</span> -->
+<!-- author will be dynamic -->
+            <span id="author"></span> </div>
+        <!-- buttons -->
+       <div class="button-container">
+        <button class="twitter-button" id="twitter" title="Tweet this!">
+            <i class="fab fa-twitter"></i>
+        </button>
+       <button id="new-quote">New Quote</button>
+       </div>
+    </div>
+    <!-- loader ,use w3 school-->
+    <div class="loader" id="loader"></div>
+<!-- using array of quotes existing locally in our project -->
+<!-- benefit is that we can customize the local array according to our need  -->
+<script src="quote.js"></script>    
+<script src="script.js"></script>
+</body>
+</html>
